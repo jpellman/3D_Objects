@@ -3,8 +3,9 @@ difference(){
 	linear_extrude(height = 1, center = true, convexity = 10, twist = -2, slices = 20, scale = 1.0) { circle(10); }
 	linear_extrude(height = 2, center = true, convexity = 10, twist = -2, slices = 20, scale = 1.0) { circle(8); }
 }
+
 // Inner circle
-circle(2);
+linear_extrude(height = 1, center = true, convexity = 10, twist = -2, slices = 20, scale = 1.0) { circle(2); }
 
 // Beams
 rotate([90,0,0]){ cube([1, 1, 20], center=true); }
